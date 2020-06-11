@@ -17,7 +17,7 @@ the original file
 git commands:
 
 git init: start repository from scratch. we initialize an empty git 
-repository in the current directory
+repository (Git Directory) in the current directory
 
     example: 
         - git init
