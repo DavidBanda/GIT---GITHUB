@@ -39,6 +39,11 @@ git commit: command to get commited into the Git Directory
     example:
         - git commit
         - git commit -m "commit message"
+        
+git log: display commit messages
+
+    example:
+        - git log
 
 concepts: 
     - Staging Area (Index) -
@@ -51,4 +56,11 @@ concepts:
     - Git Directory -
     Contains all the changes of the project and their history. 
 
+    - Good Commit Message -
+    first line: short summary of the commit (50 chars or less)
+    blank line:
+    next lines: full description of the changes which details
+    why they're necessary or anything especially interesting
+    about them or difficult to understand
+ 
 
