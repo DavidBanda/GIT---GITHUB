@@ -27,6 +27,7 @@ git add: we add our file or files to the Staging Area
     example: 
         - git add file.py
         - git add .
+        - git add -p
 
 git status: Get some information about the current Working Tree and
 pending changes.
@@ -47,6 +48,20 @@ git log: display commit messages
 
     example:
         - git log
+        - git log --stat: show insertions and deletions
+        - git log -p: show commits and display information about each one
+
+git show: this command takes a commit ID as a parameter and display
+information 
+
+    example:
+        - git show ID_COMMIT
+
+git diff: see all the changes that been made it, and we can pass as a 
+parameter a file to see changes of that file instead all the changes.
+
+    example:
+        - git diff
 
 
 git config: see all git config
