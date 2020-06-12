@@ -39,11 +39,19 @@ git commit: command to get commited into the Git Directory
     example:
         - git commit
         - git commit -m "commit message"
-        
+        - git commit -a -m "commit message": A shortcut to stage any 
+        changes to tracked files and commit them in one step
+
+
 git log: display commit messages
 
     example:
         - git log
+
+
+git config: see all git config
+    example:
+        - git config -l
 
 concepts: 
     - Staging Area (Index) -
