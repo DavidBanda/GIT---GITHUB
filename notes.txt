@@ -44,6 +44,9 @@ git commit: command to get commited into the Git Directory
         - git commit -a -m "commit message": A shortcut to stage any 
         changes to tracked files and commit them in one step
 
+git rm: Stop the file from being tracked by git and removed it from
+from the git directory.
+
 
 git log: display commit messages
 
@@ -64,7 +67,7 @@ parameter a file to see changes of that file instead all the changes.
     example:
         - git diff
         - git --staged: changes that are staged but no committed
-        
+
 
 
 git config: see all git config
