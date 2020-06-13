@@ -27,7 +27,8 @@ git add: we add our file or files to the Staging Area
     example: 
         - git add file.py
         - git add .
-        - git add -p
+        - git add -p: ask for each change made it, and only
+        add that we want to commit
 
 git status: Get some information about the current Working Tree and
 pending changes.
@@ -62,6 +63,8 @@ parameter a file to see changes of that file instead all the changes.
 
     example:
         - git diff
+        - git --staged: changes that are staged but no committed
+        
 
 
 git config: see all git config
@@ -85,5 +88,3 @@ concepts:
     next lines: full description of the changes which details
     why they're necessary or anything especially interesting
     about them or difficult to understand
- 
-
