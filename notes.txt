@@ -46,6 +46,14 @@ git commit: command to get commited into the Git Directory
 
 git rm: Stop the file from being tracked by git and removed it from
 from the git directory.
+    
+    example:
+        - git rm file.py
+
+git mv: Rename files in the repository
+
+    example:
+        - git mv oldFile.py newFile.py
 
 
 git log: display commit messages
@@ -91,3 +99,7 @@ concepts:
     next lines: full description of the changes which details
     why they're necessary or anything especially interesting
     about them or difficult to understand
+
+    - Git Ignore - 
+    Inside of this file we specify rules to tell git which files to
+    skip for the current repo.
