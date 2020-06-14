@@ -67,6 +67,13 @@ overwrite the previous commit. (Local Commits Only)
     example:
         - git commit --amend
 
+git revert: it creates a commit that contains the inverse of all the changes
+made in the bad commit in order to cancel them out. Reverts the changes from 
+the previous commit wherever HEAD is.
+    
+    example:
+        - git revert HEAD
+
 git rm: Stop the file from being tracked by git and removed it from
 from the git directory.
     
