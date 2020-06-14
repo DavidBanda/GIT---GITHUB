@@ -61,6 +61,12 @@ git reset: resetting our changes to whatever is in the current snapshot.
         - git reset HEAD file.txt
         - git reset -p: ask which specific changes you want to reset
 
+git commit amend: Take whatever is currently in our staging area and 
+overwrite the previous commit. (Local Commits Only)
+
+    example:
+        - git commit --amend
+
 git rm: Stop the file from being tracked by git and removed it from
 from the git directory.
     
