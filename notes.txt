@@ -14,7 +14,9 @@ the original file
     example:
         - patch file.py < change.diff
 
-git commands:
+Git Commands:
+
+    -- Basic Commands --
 
 git init: start repository from scratch. we initialize an empty git 
 repository (Git Directory) in the current directory
@@ -42,13 +44,22 @@ git commit: command to get commited into the Git Directory
         - git commit
         - git commit -m "commit message"
         - git commit -a -m "commit message": A shortcut to stage any 
-        changes to tracked files and commit them in one step
+        changes to tracked files and commit them in one step 
+
+    -- Modify/Delete/Reset Files --
 
 git restore: discard changes in working directory
 
     example: 
         - git restore file.py
-        - git restore -p file.py
+        - git restore -p file.py: check each individual change.
+
+git reset: resetting our changes to whatever is in the current snapshot. 
+(staging area)
+
+    example:
+        - git reset HEAD file.txt
+        - git reset -p: ask which specific changes you want to reset
 
 git rm: Stop the file from being tracked by git and removed it from
 from the git directory.
@@ -60,6 +71,8 @@ git mv: Rename files in the repository
 
     example:
         - git mv oldFile.py newFile.py
+
+    -- Display Info --
 
 
 git log: display commit messages
@@ -82,19 +95,20 @@ parameter a file to see changes of that file instead all the changes.
         - git diff
         - git --staged: changes that are staged but no committed
 
-
+    -- Show Git Config --
 
 git config: see all git config
     example:
         - git config -l
 
 concepts: 
-    - Staging Area (Index) -
-    A file maintained by Git that contains all of the information about
-    what files and changes are going to go into your next commit.
 
     - Working Tree -
     Is the current version of your project.
+
+    - Staging Area (Index) -
+    A file maintained by Git that contains all of the information about
+    what files and changes are going to go into your next commit.
 
     - Git Directory -
     Contains all the changes of the project and their history. 
