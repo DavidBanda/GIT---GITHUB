@@ -44,6 +44,12 @@ git commit: command to get commited into the Git Directory
         - git commit -a -m "commit message": A shortcut to stage any 
         changes to tracked files and commit them in one step
 
+git restore: discard changes in working directory
+
+    example: 
+        - git restore file.py
+        - git restore -p file.py
+
 git rm: Stop the file from being tracked by git and removed it from
 from the git directory.
     
