@@ -46,6 +46,15 @@ git commit: command to get commited into the Git Directory
         - git commit -a -m "commit message": A shortcut to stage any 
         changes to tracked files and commit them in one step 
 
+git branch: A pointer to a particular commit
+
+    example:
+        - git branch: list all branches 
+        - git branch new-feature: create a new branch
+        - git checkout new-feature: switch to a branch
+        - git checkout -b new-feature: create a new branch and
+        switch to it in a single step
+
     -- Modify/Delete/Reset Files --
 
 git restore: discard changes in working directory
@@ -70,9 +79,12 @@ overwrite the previous commit. (Local Commits Only)
 git revert: it creates a commit that contains the inverse of all the changes
 made in the bad commit in order to cancel them out. Reverts the changes from 
 the previous commit wherever HEAD is.
+
+- Always add a 'Rollback reason' on middle.
     
     example:
-        - git revert HEAD
+        - git revert HEAD 
+        - git revert ID_COMMIT
 
 git rm: Stop the file from being tracked by git and removed it from
 from the git directory.
@@ -136,3 +148,8 @@ concepts:
     - Git Ignore - 
     Inside of this file we specify rules to tell git which files to
     skip for the current repo.
+
+
+
+
+
