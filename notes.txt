@@ -59,7 +59,7 @@ git branch: A pointer to a particular commit
 git merge: Combining branched data and history together
     
     example:
-        - 
+        - git merge new-feature: merge a branch into another
 
 
     -- Modify/Delete/Reset Files --
