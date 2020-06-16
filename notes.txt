@@ -54,6 +54,13 @@ git branch: A pointer to a particular commit
         - git checkout new-feature: switch to a branch
         - git checkout -b new-feature: creates a new branch and
         switches to it in a single step
+        - git branch -d new-feature: delete a branch
+
+git merge: Combining branched data and history together
+    
+    example:
+        - 
+
 
     -- Modify/Delete/Reset Files --
 
