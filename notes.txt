@@ -60,6 +60,8 @@ git merge: Combining branched data and history together
     
     example:
         - git merge new-feature: merge a branch into another
+        - git merge --abort: stop the merge and reset the files in your working tree
+        back to the previous commit before the merge ever happened.
 
 
     -- Modify/Delete/Reset Files --
