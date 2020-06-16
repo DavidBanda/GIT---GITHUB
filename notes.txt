@@ -50,10 +50,10 @@ git branch: A pointer to a particular commit
 
     example:
         - git branch: list all branches 
-        - git branch new-feature: create a new branch
+        - git branch new-feature: creates a new branch
         - git checkout new-feature: switch to a branch
-        - git checkout -b new-feature: create a new branch and
-        switch to it in a single step
+        - git checkout -b new-feature: creates a new branch and
+        switches to it in a single step
 
     -- Modify/Delete/Reset Files --
 
