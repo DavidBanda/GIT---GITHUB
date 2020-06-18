@@ -64,6 +64,35 @@ git merge: Combining branched data and history together
         back to the previous commit before the merge ever happened.
 
 
+    -- Remote Basic Commands -- 
+
+git clone: Is used to clone a remote repository into a local workspace
+
+    example:
+        - git clone URL
+
+git push: Is used to push commits from your local repo to a remote repo
+
+    example:
+        - git push
+
+git pull: Is used to fetch the newest updates from a remote repository
+
+    example:
+        - git pull
+
+git remote: See the URL's associated with the origin remote
+
+    example:
+        - git remote -v
+        - git remote show origin: get more information
+
+git branch: 
+
+    example: 
+        - git branch -r: lists remote branches
+
+
     -- Modify/Delete/Reset Files --
 
 git restore: discard changes in working directory
@@ -106,8 +135,8 @@ git mv: Rename files in the repository
     example:
         - git mv oldFile.py newFile.py
 
-    -- Display Info --
 
+    -- Display Info --
 
 git log: display commit messages
 
@@ -129,11 +158,13 @@ parameter a file to see changes of that file instead all the changes.
         - git diff
         - git --staged: changes that are staged but no committed
 
+
     -- Show Git Config --
 
 git config: see all git config
     example:
         - git config -l
+
 
 concepts: 
 
@@ -157,6 +188,9 @@ concepts:
     - Git Ignore - 
     Inside of this file we specify rules to tell git which files to
     skip for the current repo.
+
+    - Remote Branches -
+    It's like a local branches but in the remote branches
 
 
 
