@@ -81,11 +81,19 @@ git pull: Is used to fetch the newest updates from a remote repository
     example:
         - git pull
 
+git fetch: fetches remote updates but doesnt merge. fetch only branches
+
+    example:
+        - git fetch
+        - git merge origin/master: merge remote branches into our master branch
+
 git remote: See the URL's associated with the origin remote
 
     example:
         - git remote -v
         - git remote show origin: get more information
+        - git remote update: Fetch the contents of all remote branches,
+        wothout merging any content into the local branches.
 
 git branch: 
 
