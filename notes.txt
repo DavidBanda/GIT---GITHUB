@@ -102,6 +102,12 @@ git branch:
     example: 
         - git branch -r: lists remote branches
 
+git rebase: git will try to replay our commits after the latest commit 
+in that branch. keep our history linear
+
+    example:
+        - git rebase
+
 
     -- Modify/Delete/Reset Files --
 
