@@ -1,5 +1,17 @@
-import os, sys
+import os, sys, shutil
 
+def check_disk_usage(disk, min_absolute, min_percent):
+    """Return True if there is enough free disk space, false otherwise"""
+    du = shutil.disk_usage(disk)
+
+    # Calculate the percentage of free space
+    percent_free = 100 * du.free / du.total
+    # Calculate how many free gigabytes
+    gigabytes_free = du.free / 2**30
+
+    if percent_free < min_percent or gigabytes_free < min_absolute:
+        return False
+    return True
 
 def check_reboot():
     """Returns True if the computer has a pending reboot"""

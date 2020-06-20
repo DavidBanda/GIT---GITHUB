@@ -50,18 +50,19 @@ git branch: A pointer to a particular commit
 
     example:
         - git branch: list all branches 
-        - git branch new-feature: creates a new branch
-        - git checkout new-feature: switch to a branch
-        - git checkout -b new-feature: creates a new branch and
+        - git branch <branch_name>: creates a new branch
+        - git checkout <branch_name>: switch to a branch
+        - git checkout -b <branch_name>: creates a new branch and
         switches to it in a single step
-        - git branch -d new-feature: delete a branch
+        - git branch -d <branch_name>: delete a branch
 
 git merge: Combining branched data and history together
     
     example:
-        - git merge new-feature: merge a branch into another
-        - git merge --abort: stop the merge and reset the files in your working tree
-        back to the previous commit before the merge ever happened.
+        - git merge <branch_name>: merge another branch into the current 
+        you are
+        - git merge --abort: stop the merge and reset the files in your working 
+        tree back to the previous commit before the merge ever happened.
 
 
     -- Remote Basic Commands -- 
@@ -75,6 +76,7 @@ git push: Is used to push commits from your local repo to a remote repo
 
     example:
         - git push
+        - git push -u origin <branch_name>: push a branch to a remote repo
 
 git pull: Is used to fetch the newest updates from a remote repository
 
@@ -157,7 +159,7 @@ git show: this command takes a commit ID as a parameter and display
 information 
 
     example:
-        - git show ID_COMMIT
+        - git show <id_commit>
 
 git diff: see all the changes that been made it, and we can pass as a 
 parameter a file to see changes of that file instead all the changes.
