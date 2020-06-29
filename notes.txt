@@ -77,6 +77,8 @@ git push: Is used to push commits from your local repo to a remote repo
     example:
         - git push
         - git push -u origin <branch_name>: push a branch to a remote repo
+        - git push --delete origin refactor: delete a remote branch
+
 
 git pull: Is used to fetch the newest updates from a remote repository
 
@@ -102,12 +104,12 @@ git branch:
     example: 
         - git branch -r: lists remote branches
 
-git rebase: git will try to replay our commits after the latest commit 
-in that branch. keep our history linear
+git rebase: Move the current branch on top of the selected branch. 
+keep our history linear
 
     example:
-        - git rebase
-
+        - git rebase <branch_name> | <origin/master>
+        
 
     -- Modify/Delete/Reset Files --
 
