@@ -10,6 +10,7 @@ def check_free_memory():
     freeMemoryInBytes = memory.free
     freeMemoryInGB = freeMemoryInBytes / BYTES_IN_GIGABYTE
 
+
     print(f'Total physical memory available: {totalMemoryInGB}GB')
     print(f'Free physical memory available: {freeMemoryInGB}GB')
 

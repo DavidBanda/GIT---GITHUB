@@ -77,7 +77,7 @@ git push: Is used to push commits from your local repo to a remote repo
     example:
         - git push
         - git push -u origin <branch_name>: push a branch to a remote repo
-        - git push --delete origin refactor: delete a remote branch
+        - git push --delete origin <branch_name>: delete a remote branch
 
 
 git pull: Is used to fetch the newest updates from a remote repository
@@ -118,7 +118,6 @@ git restore: discard changes in working directory
     example: 
         - git restore file.py
         - git restore -p file.py: check each individual change.
-
 git reset: resetting our changes to whatever is in the current snapshot. 
 (staging area)
 
@@ -152,6 +151,10 @@ git mv: Rename files in the repository
 
     example:
         - git mv oldFile.py newFile.py
+
+    -- Collaboration -- 
+
+
 
 
     -- Display Info --
@@ -209,6 +212,14 @@ concepts:
 
     - Remote Branches -
     It's like a local branches but in the remote branches
+
+    - Forking -
+    A way of creating a copy of the given repository so that it belongs
+    to our user 
+
+    - Pull Request -
+    A commit or series of commits that you send to the owner of the repository
+    so that they incorporate it into their tree
 
 
 
