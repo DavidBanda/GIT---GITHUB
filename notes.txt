@@ -109,6 +109,7 @@ keep our history linear
 
     example:
         - git rebase <branch_name> | <origin/master>
+        - git rebase -i master: create single commit, later use git push -f
         
 
     -- Modify/Delete/Reset Files --
@@ -152,11 +153,6 @@ git mv: Rename files in the repository
     example:
         - git mv oldFile.py newFile.py
 
-    -- Collaboration -- 
-
-
-
-
     -- Display Info --
 
 git log: display commit messages
@@ -179,6 +175,35 @@ parameter a file to see changes of that file instead all the changes.
         - git diff
         - git --staged: changes that are staged but no committed
 
+
+    -- Contribution --
+
+    1.- Fork the original repository
+    2.- clone it to my local machine.
+    3.- Make a branch to fix existing bug or whatever.
+    4.- Push that branch to my repo
+    5.- Send a pull request.
+
+    Then:
+
+    # Add the remote, call it "upstream":
+
+    git remote add upstream https://github.com/whoever/whatever.git
+
+    # Fetch all the branches of that remote into remote-tracking branches,
+    # such as upstream/master:
+
+    git fetch upstream
+
+    # Make sure that you're on your master branch:
+
+    git checkout master
+
+    # Rewrite your master branch so that any commits of yours that
+    # aren't already in upstream/master are replayed on top of that
+    # other branch:
+
+    git rebase upstream/master
 
     -- Show Git Config --
 
